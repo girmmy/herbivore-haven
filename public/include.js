@@ -2,17 +2,27 @@ document.addEventListener("DOMContentLoaded", function() {
     const header = document.getElementById("header");
     const footer = document.getElementById("footer");
 
-    //including header.html file on each page
-    fetch("header.html")
-    .then(response => response.text())
-    .then(html => {
-        header.html = html;
-    });
+    // Include header.html file
+    fetch("./header.html")
+        .then(response => response.text())
+        .then(html => {
+            header.innerHTML = html;
+            
+            // Dropdown functionality for the menu button
+            const menuBtn = document.querySelector('.menu-btn');
+            const dropdown = document.querySelector('.dropdown');
+            
+            menuBtn.addEventListener('click', () => {
+                dropdown.classList.toggle('active');
+            });
+        })
+        .catch(error => console.error('Error loading header:', error));
 
-    //same thing but footer
-    fetch("footer.html")
-    .then(response => response.text())
-    .then(html => {
-        footer.innerHTML = html;
-    })
-})
+    // Including footer.html file on each page
+    fetch("./footer.html")
+        .then(response => response.text())
+        .then(html => {
+            footer.innerHTML = html;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+});
