@@ -1,0 +1,39 @@
+.footer {
+    background-color: #2d442d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Yoseva One', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    margin-top: 10px;
+}
