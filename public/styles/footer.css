@@ -3,7 +3,7 @@
     color: white;
     text-align: center;
     padding: 20px;
-    font-family: 'Yoseva One', sans-serif;
+    font-family: var(--regular-font)
 }
 
 .footer-content {

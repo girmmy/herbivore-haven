@@ -1,0 +1,20 @@
+/* This file has the global styles for the whole site 
+so if you want to use a font or color, just 
+ use these variables like 'var(--primary-color)' */
+
+
+:root {
+    --primary-color: #606C38;
+    --secondary-color: #283618;
+    --tertiary-color: #FEFAE0;
+    --brown-light:#DDA15E;
+    --brown-dark: #BC6C25;
+    --primary-font: 'Yeseva One';
+    --regular-font: 'Josefin Sans';
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
