@@ -50,6 +50,16 @@ section#hero {
     height: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 4rem;
+        padding-bottom: 1.5rem;
+    }
+    .hero-text p {
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
 @media screen and (max-width: 768px) {
     section#hero {
         display: block;
@@ -58,15 +68,7 @@ section#hero {
         padding-top: 2rem;
         max-width: 20rem;
     }
-    .hero-text h1 {
-        font-size: 4rem;
-        padding-bottom: 1.5rem;
-    }
-    .hero-text p {
-        font-size: 2rem;
-        padding-bottom: 1.5rem;
-    }
-    
+
 }
 
 @media screen and (max-width: 480px){
