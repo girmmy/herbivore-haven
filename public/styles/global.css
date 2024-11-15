@@ -18,3 +18,27 @@ so if you want to use a font or color, just
     box-sizing: border-box;
     padding: 0;
 }
+
+/* Button styling */
+.main-btn {
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    background-color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: var(--regular-font);
+    color: var(--primary-color);
+}
+.main-btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+@media screen and (max-width: 480px) {
+    .main-btn {
+        font-size: 1.25rem;
+    }
+}

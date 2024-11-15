@@ -3,3 +3,8 @@
 
 
 Parkview TSA Webmaster Event for 24-25
+
+
+for gimmy:
+
+FOR COPYRIGHT CHECKLIST CHECK go to Forms Appendix pdf on parkview tsa google drive
