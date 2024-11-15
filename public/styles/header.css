@@ -13,6 +13,7 @@
     box-sizing: border-box;
     padding: 0;
 }
+
 body {
     backdrop-filter: blur(4px);
 }
@@ -25,7 +26,6 @@ header#nav {
 .logo-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
     align-items: center;
     margin-left: 1rem;
 }
