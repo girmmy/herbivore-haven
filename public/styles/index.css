@@ -37,7 +37,7 @@ section#hero {
     color: var(--primary-color);
     font-family: var(--regular-font);
     font-size: 2rem;
-    max-width: 40rem;
+    max-width: 50rem;
     padding-bottom: 2rem;
 }
 
