@@ -37,7 +37,7 @@ section#hero {
     color: var(--primary-color);
     font-family: var(--regular-font);
     font-size: 2rem;
-    max-width: 30rem;
+    max-width: 40rem;
     padding-bottom: 2rem;
 }
 
@@ -241,7 +241,7 @@ section#farm-to-table {
     padding-bottom: 2rem;
     font-family: var(--regular-font);
     text-align: left;
-    max-width: 50rem;
+    max-width: 80rem;
     font-size: 1.5rem;
     padding-right: 2rem;
 }
