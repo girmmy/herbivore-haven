@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap" rel="stylesheet">
@@ -12,7 +12,27 @@
 </head>
 <body>
     <header id="header"></header>
+    <!-- HERO -->
+    <section id=hero>
+        <h1 class="h1-text">Contact Us</h1>
+    </section>
+    <h2 class="section-title">Contact Us Here!</h2>
+    <section class=" section-margins form-container">
+        <form id="contact-form">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email Address" id="email" name="email" required>
+            <label for="subject">Subject</label>
+            <input type="subject" placeholder="Subject" id="subject" name="subject" required>
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Type your message here..." name="message" required></textarea>
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
 
+        <div class="contact-img">
+            <img src="./images/misc/locationmap.svg" alt="contact photo" loading="lazy"/>
+        </div>
+    </section>
+    
     <footer id="footer"></footer>
     <script src="./include.js"></script>
 </body>

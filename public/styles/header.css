@@ -78,6 +78,7 @@ a.logo-container {
     font-size: 1.5rem;
     cursor: pointer;
     margin-right: 3rem;
+    margin-left: auto;
 }
 
 @media screen and (max-width: 1024px) {
