@@ -7,7 +7,7 @@ so if you want to use a font or color, just
     --primary-color: #606C38;
     --secondary-color: #283618;
     --tertiary-color: #FEFAE0;
-    --brown-light:#DDA15E;
+    --brown-light:#b98346;
     --brown-dark: #BC6C25;
     --primary-font: 'Yeseva One';
     --regular-font: 'Josefin Sans';
@@ -29,12 +29,14 @@ so if you want to use a font or color, just
     text-decoration: none;
     font-family: var(--regular-font);
     color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
 }
 .main-btn:hover{
-    background-color: var(--secondary-color);
-    color: var(--tertiary-color);
+    background-color: var(--brown-dark);
+    color: #fff;
+    border: none;
     cursor: pointer;
-    transition: 0.1s ease;
+    font-size: 1.65rem;
 }
 
 @media screen and (max-width: 480px) {

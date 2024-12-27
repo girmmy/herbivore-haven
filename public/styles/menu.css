@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.section-title {
+    font-family: var(--primary-font);
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center; 
+}
+
+.section-margins {
+    margin: 6rem 5rem;
+}
+
+section#hero {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)), url('../images/misc/headerbg.png') no-repeat center center / cover;
+}
+
+@media screen and (max-width: 480px) {
+    .h1-text {
+        font-size: 3rem;
+    }
+}
+
+.h1-text {
+    color: #fff;
+    font-family: var(--primary-font);
+    font-weight: 800;
+    padding: 1rem;
+    font-size: 5rem;
+    margin: 2rem 0;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* MENU CSS */
+/* MENU CSS */
+/* MENU CSS */
+
+.menu-wrapper {
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.quick-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.quick-nav h3 {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quick-nav i {
+    font-size: 1rem;
+    display: flex;
+    font-weight: 200;
+    justify-content: center;
+    font-family: var(--regular-font);
+    margin-bottom: 2rem;
+}
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-list a {
+    text-decoration: none;;
+    color: white;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin: 1.5rem;
+    width: 400px;
+    transition: 0.2s ease-in-out;
+}
+
+.menu-list a:hover {
+    flex-grow: 0.05;
+}
+
+
+/* images for each card */
+.menu-list a:nth-child(1) {
+    background: url('../images/menu/handheld.png') no-repeat center center / cover;
+}
+
+.menu-list a:nth-child(2) {
+    background: url('../images/menu/heavenly-salads.png') no-repeat center center / cover;
+}
+
+.menu-list a:nth-child(3) {
+    background: url('../images/menu/haven-platters.png') no-repeat center center / cover;
+}
+
+.menu-list a:nth-child(4) {
+    background: url('../images/menu/humbled-bowls.png') no-repeat center center / cover;
+}
+
+.menu-list a:nth-child(5) {
+    background: url('../images/menu/harvested-noodles.png') no-repeat center center / cover;
+}
+
+.menu-list a:nth-child(6) {
+    background: url('../images/menu/hearty-entree.png') no-repeat center center / cover;
+}
+
+
+.menu-list li {
+    font-family: var(--regular-font);
+    font-weight: 400;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 0;
+}
+
+.menu-list a:hover li {
+    font-weight: 800;
+    background: var(--secondary-color);
+}
+
+@media screen and (max-width: 580px) {
+    .menu-wrapper{
+        flex-direction: column;
+
+    }
+    .menu-list a {
+        width: 100%;
+        margin-bottom: 0.5;
+        white-space: normal;
+    }
+    .menu-list li {
+        font-size: 1.25rem;
+        white-space: pre-line;
+    }
+
+}
+
+
+/* menu section */
+/* menu section */
+/* menu section */
+
+/* General menu container styling */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Adjust the gap for even spacing */
+    justify-content: center; /* Center-align the sections */
+    width: 100%;
+    padding: 1rem;
+    margin-top: 8rem;
+    box-sizing: border-box;
+}
+
+/* Individual section styling */
+.menu > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(33.333% - 2rem); /* 3 sections per row, adjust for gap */
+    max-width: calc(33.333% - 2rem); /* Limit width for consistent layout */
+    min-width: 250px; 
+    background: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Menu title wrapper styling */
+.menu-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Menu title styling */
+.menu-title {
+    font-family: var(--regular-font);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    color: #333; 
+    border: none; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+ul li {
+    margin-bottom: 1.5rem;
+}
+
+
+.menu-item-title {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.menu-item-desc {
+    font-family: var(--regular-font);
+    font-weight: 300;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .menu > div {
+        flex: 1 1 calc(50% - 2rem); 
+        max-width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu > div {
+        flex: 1 1 100%; /* One section per row on small screens */
+        max-width: 100%;
+    }
+    .menu-item-title {
+        font-size: 1rem;
+    }
+    .menu-item-desc {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+/* RESERVATION SECTION */
+/* RESERVATION SECTION */
+/* RESERVATION SECTION */
+
+
+.reservation-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    margin: 6rem;
+    padding: 2rem;
+}
+
+.reservation-wrapper h2 {
+    font-family: var(--primary-font);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .reservation-wrapper h2 {
+        font-size: 1.25rem;
+    }
+}
