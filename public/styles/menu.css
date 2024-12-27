@@ -177,8 +177,8 @@ section#hero {
 .menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem; /* Adjust the gap for even spacing */
-    justify-content: center; /* Center-align the sections */
+    gap: 3rem; /* bigger gap can make it a 3x2 */
+    justify-content: center; 
     width: 100%;
     padding: 1rem;
     margin-top: 8rem;
@@ -212,7 +212,7 @@ section#hero {
 /* Menu title styling */
 .menu-title {
     font-family: var(--regular-font);
-    font-weight: 600;
+    font-weight: 1000;
     font-size: 1.5rem;
     text-align: center;
     margin: 0;
