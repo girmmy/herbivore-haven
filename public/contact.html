@@ -20,7 +20,10 @@
     
     <h2 class="section-title">Contact Us Here!</h2>
     <section class=" section-margins form-container">
-        <form id="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+
+            <input type="hidden" name="access_key" value="d697916e-5b33-45ee-9940-4ede028ed4e4">
+
             <label for="email">Email</label>
             <input type="email" placeholder="Email Address" id="email" name="email" required>
             <label for="subject">Subject</label>
@@ -28,6 +31,8 @@
             <label for="message">Message</label>
             <textarea id="message" placeholder="Type your message here..." name="message" required></textarea>
             <button class="submit-btn" type="submit">Submit</button>
+
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         </form>
 
         <div class="contact-img">
