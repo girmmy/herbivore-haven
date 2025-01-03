@@ -37,3 +37,16 @@
 .copyright {
     margin-top: 10px;
 }
+
+.resource-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.resource-link:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}

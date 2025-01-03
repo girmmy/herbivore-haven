@@ -73,6 +73,17 @@ a.logo-container {
     color: var(--tertiary-color);
 }
 
+/* .reserve-btn a {
+    background: var(--secondary-color);
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+.reserve-btn a:hover {
+    background: var(--brown-dark);
+    color: white;
+    
+} */
+
 .menu-btn {
     display: none;
     color: black;
