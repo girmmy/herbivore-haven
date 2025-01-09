@@ -51,10 +51,13 @@ section#preparations {
     margin: 6rem 5rem;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .prep-img img{
     display: flex;
+    max-width: 40rem;
+    max-height: 40rem;
 }
 
 .prep-title {
@@ -67,7 +70,14 @@ section#preparations {
 .prep-text {
     padding-left: 2rem;
 }
+
 .prep-img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.prep-img2 {
     display: flex;
     width: 100%;
     height: 100%;
@@ -81,14 +91,6 @@ section#preparations {
     max-width: 80rem;
     font-size: 1.5rem;
     padding-right: 2rem;
-}
-
-.prep-desc2 {
-    padding-bottom: 2rem;
-    font-family: var(--regular-font);
-    text-align: left;
-    max-width: 80rem;
-    font-size: 1.5rem;
 }
 
 .prep-btn {
