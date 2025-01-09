@@ -49,6 +49,10 @@ section#hero {
 /* MENU CSS */
 /* MENU CSS */
 
+html, #sec1, #sec2, #sec3, #sec4, #sec5, #sec6 {
+    scroll-behavior: smooth;
+}
+
 .menu-wrapper {
     margin: 4rem;
     display: flex;
@@ -79,6 +83,7 @@ section#hero {
     font-family: var(--regular-font);
     margin-bottom: 2rem;
 }
+
 .menu-list {
     display: flex;
     flex-direction: row;
@@ -286,6 +291,7 @@ ul li {
     border: 2px solid black;
     margin: 6rem;
     padding: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)), url('../images/menu/haven-platters.png') no-repeat center center / cover;
 }
 
 .reservation-wrapper h2 {
@@ -293,6 +299,7 @@ ul li {
     font-weight: 800;
     font-size: 2rem;
     margin-bottom: 2rem;
+    color: #fff;
     text-align: center;
 }
 
