@@ -28,7 +28,7 @@ section#hero {
 
 @media screen and (max-width: 480px) {
     .h1-text {
-        font-size: 3rem;
+        font-size: 3rem !important;
     }
 }
 

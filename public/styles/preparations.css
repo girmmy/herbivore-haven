@@ -14,9 +14,9 @@
     justify-content: center; 
 }
 
-.section-margins {
+/* .section-margins {
     margin: 6rem 5rem;
-}
+} */
 
 section#hero {
     height: 40vh;
@@ -26,9 +26,9 @@ section#hero {
     background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)), url('../images/misc/headerbg.png') no-repeat center center / cover;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .h1-text {
-        font-size: 3rem;
+        font-size: 3rem !important;
     }
 }
 
@@ -75,6 +75,7 @@ section#preparations {
     display: flex;
     width: 100%;
     height: 100%;
+    aspect-ratio: 1/1;
 }
 
 .prep-img2 {
@@ -82,6 +83,8 @@ section#preparations {
     width: 100%;
     height: 100%;
     justify-content: end;
+    aspect-ratio: 1/1;
+    margin-top: 1rem;
 }
 
 .prep-desc {
@@ -134,7 +137,17 @@ section#preparations {
 }
 
 @media screen and (max-width: 480px) {
-    .prep-img img {
+    .prep-img img,.prep-img2 img {
         width: 12rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        justify-content:normal;
     }
+    section#preparations {
+        flex-direction: column;
+    }
+    .prep-title {
+        font-size: 1.5rem;
+    }
+    
 }
