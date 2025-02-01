@@ -2,7 +2,7 @@
     --primary-color: #606C38;
     --secondary-color: #283618;
     --tertiary-color: #FEFAE0;
-    --brown-light:#DDA15E;
+    --brown-light: #DDA15E;
     --brown-dark: #BC6C25;
     --primary-font: 'Yeseva One';
     --regular-font: 'Josefin Sans';
@@ -15,12 +15,38 @@
 }
 
 body {
-    backdrop-filter: blur(4px);
+    overflow: none;
+    padding-top: 80px; /* Add padding to body to prevent content from being hidden behind the fixed navbar */
 }
 
 header#nav {
     display: flex;
     flex-direction: row;
+    position: fixed;
+    top: 0; /* Ensure it sticks to the top */
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+    padding: 1rem 0; /* Add padding for better spacing */
+}
+
+#nav.scrolled {
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#nav.scrolled .logo-container h2 {
+    color: white;
+}
+
+#nav.scrolled .nav-link a {
+    color: white;
+}
+
+#nav.scrolled .nav-link a:hover {
+    background: var(--tertiary-color);
+    color: black;
 }
 
 .logo-container {
@@ -64,25 +90,15 @@ a.logo-container {
 .nav-link {
     list-style: none;
     overflow: hidden;
-    padding:1rem;
+    padding: 1rem;
     margin-bottom: 0px;
 }
+
 .nav-link a:hover {
     background: var(--secondary-color);
     transition: all 0.5s ease;
     color: var(--tertiary-color);
 }
-
-/* .reserve-btn a {
-    background: var(--secondary-color);
-    color: #fff;
-    transition: 0.2s ease-in-out;
-}
-.reserve-btn a:hover {
-    background: var(--brown-dark);
-    color: white;
-    
-} */
 
 .menu-btn {
     display: none;
@@ -98,20 +114,21 @@ a.logo-container {
         font-size: 1.2rem;
     }
 }
+
 @media screen and (max-width: 768px) {
     .logo-container h2 {
         display: none;
     }
+
     .nav-links {
         gap: 0px;
         margin-right: 1rem;
     }
+
     .nav-link a {
         font-size: 1.1rem;
     }
 }
-
-
 
 @media screen and (max-width: 530px) {
     .menu-btn {
@@ -119,12 +136,11 @@ a.logo-container {
         align-items: center;
         justify-content: end;
     }
+
     .nav-links {
         display: none;
     }
-}
 
-@media screen and (max-width: 530px) {
     .dropdown {
         position: absolute;
         top: 4rem; /* Adjust based on your header height */
@@ -138,21 +154,24 @@ a.logo-container {
         padding: 1rem;
         border-radius: 10px;
     }
+
     .dropdown.active {
         display: flex;
         width: 10rem;
         height: auto;
     }
+
     .nav-link a:hover {
         padding: 1rem;
         background: var(--tertiary-color);
         color: var(--brown-dark);
     }
-    .nav-link a{
+
+    .nav-link a {
         color: var(--tertiary-color);
     }
+
     .nav-link {
         padding: 1rem;
     }
 }
-

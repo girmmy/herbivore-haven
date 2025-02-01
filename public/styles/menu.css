@@ -112,27 +112,27 @@ html, #sec1, #sec2, #sec3, #sec4, #sec5, #sec6 {
 
 /* images for each card */
 .menu-list a:nth-child(1) {
-    background: url('../images/menu/handheld.png') no-repeat center center / cover;
+    background: url('https://images.unsplash.com/photo-1713667417761-408ec68c3af1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center / cover;
 }
 
 .menu-list a:nth-child(2) {
-    background: url('../images/menu/heavenly-salads.png') no-repeat center center / cover;
+    background: url('https://images.unsplash.com/photo-1509401867-6a8e89483fdb?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center / cover;
 }
 
 .menu-list a:nth-child(3) {
-    background: url('../images/menu/haven-platters.png') no-repeat center center / cover;
+    background: url('https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center / cover;
 }
 
 .menu-list a:nth-child(4) {
-    background: url('../images/menu/humbled-bowls.png') no-repeat center center / cover;
+    background: url('https://images.unsplash.com/photo-1620418025834-f4379baf1de9?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center / cover;
 }
 
 .menu-list a:nth-child(5) {
-    background: url('../images/menu/harvested-noodles.png') no-repeat center center / cover;
+    background: url('https://images.unsplash.com/photo-1546549032-9571cd6b27df?q=80&w=3035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center / cover;
 }
 
 .menu-list a:nth-child(6) {
-    background: url('../images/menu/hearty-entree.png') no-repeat center center / cover;
+    background: url('https://plus.unsplash.com/premium_photo-1723770033472-0b0452d98225?q=80&w=2897&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center / cover;
 }
 
 
