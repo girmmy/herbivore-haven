@@ -142,8 +142,8 @@ a.logo-container {
     }
 
     .dropdown {
-        position: absolute;
-        top: 4rem; /* Adjust based on your header height */
+        position: fixed; /* Change to fixed positioning */
+        top: 4rem;
         right: 1rem;
         display: none;
         background-color: var(--secondary-color);
@@ -153,6 +153,7 @@ a.logo-container {
         height: fit-content;
         padding: 1rem;
         border-radius: 10px;
+        z-index: 1001; 
     }
 
     .dropdown.active {
@@ -174,4 +175,11 @@ a.logo-container {
     .nav-link {
         padding: 1rem;
     }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        height: 5rem;
+    }
+    
 }

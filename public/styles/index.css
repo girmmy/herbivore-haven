@@ -16,6 +16,9 @@ section {
     margin: 6rem 5rem;
 }
 
+#header {
+    z-index: 1001
+}
 /* HERO CSS */
 /* HERO CSS */
 
