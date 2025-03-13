@@ -25,12 +25,18 @@ header#nav {
     position: fixed;
     top: 0; /* Ensure it sticks to the top */
     width: 100%;
+    padding-top: 0;
     background-color: transparent;
     z-index: 1000;
     transition: background-color 0.3s ease-in-out;
     padding: 1rem 0; /* Add padding for better spacing */
 }
 
+@media screen and (max-width: 500px) {
+    .h1-text {
+        font-size: 3rem;
+    }
+}
 #nav.scrolled {
     background-color: var(--secondary-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

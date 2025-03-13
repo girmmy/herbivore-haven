@@ -26,7 +26,7 @@ section#hero {
     background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)), url('../images/misc/headerbg.png') no-repeat center center / cover;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .h1-text {
         font-size: 3rem !important;
     }
@@ -54,10 +54,12 @@ section#preparations {
     justify-content: space-between;
 }
 
-.prep-img img{
+.prep-img img, .prep-img2 img {
     display: flex;
-    max-width: 40rem;
-    max-height: 40rem;
+    max-width: 33rem;
+    max-height: 33rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .prep-title {

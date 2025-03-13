@@ -26,7 +26,7 @@ section#hero {
     background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)), url('../images/misc/headerbg.png') no-repeat center center / cover;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .h1-text {
         font-size: 3rem;
     }
