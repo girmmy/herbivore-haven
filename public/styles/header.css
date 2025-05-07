@@ -1,191 +1,190 @@
 :root {
-    --primary-color: #606C38;
-    --secondary-color: #283618;
-    --tertiary-color: #FEFAE0;
-    --brown-light: #DDA15E;
-    --brown-dark: #BC6C25;
-    --primary-font: 'Yeseva One';
-    --regular-font: 'Josefin Sans';
+  --primary-color: #606c38;
+  --secondary-color: #283618;
+  --tertiary-color: #fefae0;
+  --brown-light: #dda15e;
+  --brown-dark: #bc6c25;
+  --primary-font: "Yeseva One";
+  --regular-font: "Josefin Sans";
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 body {
-    overflow: none;
-    padding-top: 80px; /* Add padding to body to prevent content from being hidden behind the fixed navbar */
+  overflow: none;
+  padding-top: 80px;
 }
 
 header#nav {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    top: 0; /* Ensure it sticks to the top */
-    width: 100%;
-    padding-top: 0;
-    background-color: transparent;
-    z-index: 1000;
-    transition: background-color 0.3s ease-in-out;
-    padding: 1rem 0; /* Add padding for better spacing */
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 0;
+  background-color: transparent;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 500px) {
-    .h1-text {
-        font-size: 3rem;
-    }
+  .h1-text {
+    font-size: 3rem;
+  }
 }
 #nav.scrolled {
-    background-color: var(--secondary-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #nav.scrolled .logo-container h2 {
-    color: white;
+  color: white;
 }
 
 #nav.scrolled .nav-link a {
-    color: white;
+  color: white;
 }
 
 #nav.scrolled .nav-link a:hover {
-    background: var(--tertiary-color);
-    color: black;
+  background: var(--tertiary-color);
+  color: black;
 }
 
 .logo-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1rem;
 }
 
 a.logo-container {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .logo-container h2 {
-    margin-left: 1rem;
-    font-family: var(--regular-font);
-    color: var(--primary-color);
+  margin-left: 1rem;
+  font-family: var(--regular-font);
+  color: var(--primary-color);
+  padding-top: 0.5rem;
 }
 
 .nav-links {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 2rem;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2rem;
+  gap: 1rem;
 }
 
 .nav-link a {
-    padding: 1rem;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: var(--regular-font);
-    color: #000;
-    font-size: 1.5rem;
-    font-weight: 500;
-    border-radius: 10px;
+  padding: 1rem;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: var(--regular-font);
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 10px;
 }
 
 .nav-link {
-    list-style: none;
-    overflow: hidden;
-    padding: 1rem;
-    margin-bottom: 0px;
+  list-style: none;
+  overflow: hidden;
+  padding: 1rem;
+  margin-bottom: 0px;
 }
 
 .nav-link a:hover {
-    background: var(--secondary-color);
-    transition: all 0.5s ease;
-    color: var(--tertiary-color);
+  background: var(--secondary-color);
+  transition: all 0.5s ease;
+  color: var(--tertiary-color);
 }
 
 .menu-btn {
-    display: none;
-    color: black;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-right: 3rem;
-    margin-left: auto;
+  display: none;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 3rem;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 1024px) {
-    .nav-link a {
-        font-size: 1.2rem;
-    }
+  .nav-link a {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .logo-container h2 {
-        display: none;
-    }
+  .logo-container h2 {
+    display: none;
+  }
 
-    .nav-links {
-        gap: 0px;
-        margin-right: 1rem;
-    }
+  .nav-links {
+    gap: 0px;
+    margin-right: 1rem;
+  }
 
-    .nav-link a {
-        font-size: 1.1rem;
-    }
+  .nav-link a {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 530px) {
-    .menu-btn {
-        display: flex;
-        align-items: center;
-        justify-content: end;
-    }
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
 
-    .nav-links {
-        display: none;
-    }
+  .nav-links {
+    display: none;
+  }
 
-    .dropdown {
-        position: fixed; /* Change to fixed positioning */
-        top: 4rem;
-        right: 1rem;
-        display: none;
-        background-color: var(--secondary-color);
-        padding: 0rem;
-        flex-direction: column;
-        list-style: none;
-        height: fit-content;
-        padding: 1rem;
-        border-radius: 10px;
-        z-index: 1001; 
-    }
+  .dropdown {
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+    display: none;
+    background-color: var(--secondary-color);
+    padding: 0rem;
+    flex-direction: column;
+    list-style: none;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1001;
+  }
 
-    .dropdown.active {
-        display: flex;
-        width: 10rem;
-        height: auto;
-    }
+  .dropdown.active {
+    display: flex;
+    width: 10rem;
+    height: auto;
+  }
 
-    .nav-link a:hover {
-        padding: 1rem;
-        background: var(--tertiary-color);
-        color: var(--brown-dark);
-    }
+  .nav-link a:hover {
+    padding: 1rem;
+    background: var(--tertiary-color);
+    color: var(--brown-dark);
+  }
 
-    .nav-link a {
-        color: var(--tertiary-color);
-    }
+  .nav-link a {
+    color: var(--tertiary-color);
+  }
 
-    .nav-link {
-        padding: 1rem;
-    }
+  .nav-link {
+    padding: 1rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .logo {
-        height: 5rem;
-    }
-    
+  .logo {
+    height: 5rem;
+  }
 }

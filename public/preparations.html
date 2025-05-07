@@ -1,76 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/preparations.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/preparations.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <title>Preparations - Herbivore Haven</title>
-</head>
-<body>
+    <style>
+      /* Inline CSS to ensure fonts load */
+      body {
+        font-family: "Josefin Sans", sans-serif;
+        background: white !important;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Yeseva One", serif;
+      }
+    </style>
+  </head>
+  <body>
     <header id="header"></header>
-    <section id=hero>
-        <h1 class="h1-text">Preparations</h1>
+
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Our Preparations</h1>
+        <!-- <p class="hero-subtitle">
+          Discover the care behind our plant-based cuisine
+        </p> -->
+      </div>
     </section>
 
-    <section id="preparations">
-        <div class="prep-img">
-            <img src="https://images.unsplash.com/photo-1503146234394-631200675614?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ingredient Selection and Substitution" />
+    <main class="preparations-container">
+      <!-- Preparation 1 -->
+      <section class="preparation-section">
+        <div class="preparation-image">
+          <img
+            src="https://images.unsplash.com/photo-1503146234394-631200675614?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Ingredient Selection"
+            loading="lazy"
+          />
         </div>
-        <div class="prep-text">
-            <h2 class="prep-title">Ingredient Selection and Substitution</h2>
-            <p class="prep-desc">
-                Vegan chefs carefully choose plant-based ingredients to replace animal products while maintaining flavor and texture. Popular substitutes include tofu, tempeh, and seitan as protein sources. Tofu absorbs flavors well, while tempeh offers a firm, nutty texture. Seitan provides a chewy, meat-like consistency, ideal for hearty dishes. Ingredients like nutritional yeast add a cheesy flavor, and aquafaba (from canned chickpeas) works as an egg white substitute in baking. These substitutions enable vegan restaurants to create appealing dishes for vegans and non-vegans alike.
-            </p>
-            <a href="https://www.vvproduce.com/how-to-create-a-successful-vegan-menu-for-your-restaurant/" target="_blank" alt="Learn More"><button class="main-btn ftt-btn">More Info</button></a>
+        <div class="preparation-content">
+          <h2>Ingredient Selection</h2>
+          <p>
+            Vegan chefs carefully choose plant-based ingredients to replace
+            animal products while maintaining flavor and texture. Popular
+            substitutes include tofu, tempeh, and seitan as protein sources.
+            Tofu absorbs flavors well, while tempeh offers a firm, nutty
+            texture. Seitan provides a chewy, meat-like consistency, ideal for
+            hearty dishes. Ingredients like nutritional yeast add a cheesy
+            flavor, and aquafaba (from canned chickpeas) works as an egg white
+            substitute in baking. These substitutions enable vegan restaurants
+            to create appealing dishes for vegans and non-vegans alike.
+          </p>
+          <a href="#" class="main-btn">Learn More</a>
         </div>
-        
-    </section>
+      </section>
 
-    <section id="preparations" class="section-margins">
-        <div class="prep-text">
-            <h2 class="prep-title">Cooking Techniques to Enhance Flavor and Texture</h2>
-            <p class="prep-desc">
-                Vegan chefs rely on diverse methods like steaming, sautéing, and air frying to create rich flavors and textures. Steaming preserves nutrients, while sautéing adds caramelization to vegetables and proteins. Air frying offers a crispy texture with less oil, providing a healthier alternative to traditional frying. Chefs also use dehydrating techniques to concentrate flavors in items like vegetable chips. These methods allow vegan dishes to be both nutritious and satisfying.
-            </p>
-            <a href="https://www.wellandgood.com/restaurant-vegan-food/" target="_blank" alt="Learn More"><button class="main-btn ftt-btn">More Info</button></a>
+      <!-- Preparation 2 -->
+      <section class="preparation-section reverse">
+        <div class="preparation-image">
+          <img
+            src="https://images.unsplash.com/photo-1605712776874-fc7dea449fe8?w=800&auto=format&fit=crop"
+            alt="Cooking Techniques"
+            loading="lazy"
+          />
         </div>
-        <div class="prep-img2">
-            <img src="https://images.unsplash.com/photo-1605712776874-fc7dea449fe8?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Farm To Table Movement" />
+        <div class="preparation-content">
+          <h2>Cooking Techniques</h2>
+          <p>
+            Vegan chefs rely on diverse methods like steaming, sautéing, and air
+            frying to create rich flavors and textures. Steaming preserves
+            nutrients, while sautéing adds caramelization to vegetables and
+            proteins. Air frying offers a crispy texture with less oil,
+            providing a healthier alternative to traditional frying. Chefs also
+            use dehydrating techniques to concentrate flavors in items like
+            vegetable chips. These methods allow vegan dishes to be both
+            nutritious and satisfying.
+          </p>
+          <a href="#" class="main-btn">Learn More</a>
         </div>
-    </section>
+      </section>
 
-    <section id="preparations">
-        <div class="prep-img">
-            <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Farm To Table Movement" />
-        </div>
-        <div class="prep-text">
-            <h2 class="prep-title">Prevention of Cross-Contamination</h2>
-            <p class="prep-desc">To maintain vegan integrity, restaurants implement strict protocols to avoid cross-contamination with animal products. Dedicated preparation areas, utensils, and cookware are used exclusively for plant-based foods. Staff training emphasizes cleanliness and vigilance, ensuring high standards are met. Clear labeling and regular audits further prevent contamination, catering to dietary restrictions and allergies. These measures ensure the purity of vegan dishes for all customers.</p>
-            <a href="https://hpgconsulting.com/restaurant-consultant/vegan-food-production-guidance-on-manufacturing-practices/" target="_blank" alt="Learn More"><button class="main-btn ftt-btn">More Info</button></a>
-        </div>
-        
-    </section>
+      <!-- Preparation 3 -->
 
-    <section id="preparations" class="section-margins">
-        <div class="prep-text">
-            <h2 class="prep-title">Creative Use of Seasonings and Marinades</h2>
-            <p class="prep-desc">Seasonings and marinades are essential in creating bold flavors in vegan cuisine. Chefs use smoked paprika, liquid smoke, and seaweed to replicate flavors like barbecue and seafood. Marinating tofu or tempeh in soy sauce, garlic, and ginger adds umami depth. Herbs and spices are used innovatively to enhance the taste of plant-based dishes, ensuring they satisfy even the most discerning palates.</p>
-            <a href="https://www.organicauthority.com/organic-food-recipes/specialty-diets/7-plant-based-cooking-hacks-for-restaurant-worthy-vegetarian-meals" target="_blank" alt="Learn More"><button class="main-btn ftt-btn">More Info</button></a>
+      <section class="preparation-section">
+        <div class="preparation-image">
+          <img
+            src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Farm to Table Movement"
+            loading="lazy"
+          />
         </div>
-        <div class="prep-img2">
-            <img src="https://images.unsplash.com/photo-1540420828642-fca2c5c18abe?q=80&w=3082&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Farm To Table Movement" />
+        <div class="preparation-content">
+          <h2>Prevention of Cross-Contamination</h2>
+          <p>
+            To maintain vegan integrity, restaurants implement strict protocols
+            to avoid cross-contamination with animal products. Dedicated
+            preparation areas, utensils, and cookware are used exclusively for
+            plant-based foods. Staff training emphasizes cleanliness and
+            vigilance, ensuring high standards are met. Clear labeling and
+            regular audits further prevent contamination, catering to dietary
+            restrictions and allergies. These measures ensure the purity of
+            vegan dishes for all customers.
+          </p>
+          <a
+            href="https://hpgconsulting.com/restaurant-consultant/vegan-food-production-guidance-on-manufacturing-practices/"
+            class="main-btn"
+            >Learn More</a
+          >
         </div>
-    </section>
+      </section>
 
-    
+      <!-- Preparation 4 -->
+      <section class="preparation-section reverse">
+        <div class="preparation-image">
+          <img
+            src="https://images.unsplash.com/photo-1540420828642-fca2c5c18abe?q=80&w=3082&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Use of Seasonings and Marinade"
+            loading="lazy"
+          />
+        </div>
+        <div class="preparation-content">
+          <h2>Creative Use of Seasonings and Marinades</h2>
+          <p>
+            Seasonings and marinades are essential in creating bold flavors in
+            vegan cuisine. Chefs use smoked paprika, liquid smoke, and seaweed
+            to replicate flavors like barbecue and seafood. Marinating tofu or
+            tempeh in soy sauce, garlic, and ginger adds umami depth. Herbs and
+            spices are used innovatively to enhance the taste of plant-based
+            dishes, ensuring they satisfy even the most discerning palates.
+          </p>
+          <a
+            href="https://www.organicauthority.com/organic-food-recipes/specialty-diets/7-plant-based-cooking-hacks-for-restaurant-worthy-vegetarian-meals"
+            class="main-btn"
+            >Learn More</a
+          >
+        </div>
+      </section>
+    </main>
 
     <footer id="footer"></footer>
     <script src="./include.js"></script>
-</body>
+  </body>
 </html>
