@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 /* Preparations Page with Lazy Loading and Animations */
 .preparations-container {
   max-width: 1400px;
@@ -5,21 +12,20 @@
   padding: 4rem 2rem;
 }
 
-.hero-section {
-  height: 50vh;
-  min-height: 400px;
-  position: relative;
+section#hero {
+  height: 40vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)),
+    url("../images/misc/headerbg.png") no-repeat center center / cover;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/misc/headerbg.png") no-repeat center center/cover;
-  margin-bottom: 3rem;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   text-align: center;
   color: white;
   padding: 2rem;
